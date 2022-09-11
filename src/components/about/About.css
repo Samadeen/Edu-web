@@ -1,0 +1,100 @@
+.about__home {
+  height: auto;
+}
+
+.about__home #headings {
+  text-align: left;
+  padding: 0;
+}
+
+.about__home .left img {
+  width: 35rem;
+  height: 45rem;
+  object-fit: cover;
+}
+
+.about__home .right {
+  padding: 6rem 3rem;
+}
+
+.about__home .items {
+  margin-top: 2rem;
+}
+
+.about__home .item {
+  background-color: #fff;
+  margin-top: 2rem;
+  padding: 1.2rem;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+  box-shadow: 0 6px 6px rgba(0 0 0 0.5);
+}
+
+.about__home .item:hover {
+  transform: translateY(-10px);
+  background-color: #1eb2a6;
+  color: #fff;
+  cursor: pointer;
+}
+
+.about__home .img {
+  width: 6rem;
+}
+
+.about__home img {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+}
+
+.about__home .item h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.awrapper {
+  background: url('../../../public/images/awrapper.webp') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  color: #fff;
+}
+
+.awrapper .box {
+  padding: 4.5rem 0;
+}
+
+.awrapper img {
+  margin-right: 2rem;
+}
+
+.awrapper h2 {
+  font-size: 3.2rem;
+}
+
+.awrapper h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1044px) {
+  .about__home .left img {
+    width: 40rem;
+  }
+
+  .about__home {
+    margin-top: 20%;
+  }
+
+  .about__home .container {
+    flex-direction: column;
+  }
+
+  .about__home .row {
+    width: 100%;
+  }
+
+  .awrapper {
+    height: 60vh;
+  }
+}
