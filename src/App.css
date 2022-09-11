@@ -21,3 +21,31 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
+.flexC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  width: 50%;
+}
+
+#headings {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+#headings h2 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+#headings h4 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #1eb2ab;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
