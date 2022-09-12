@@ -87,12 +87,56 @@ body {
   grid-gap: 2rem;
 }
 
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.7rem;
+}
+
 .flex {
   display: flex;
 }
 
+.outline-btn {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  border-radius: 5px;
+  border: 2px solid #1eb2ab;
+  width: 100%;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+
+.outline-btn:hover {
+  color: #fff;
+  background-color: #1eb2ab;
+  transform: scale(1.05);
+}
+
+.outline-btn:active {
+  transform: scale(0.95);
+}
+
+.padding {
+  padding: 6rem 0;
+}
+
+.shadow {
+  box-shadow: 0 5px 25px -2px rgba(0, 0, 0 / 6%);
+}
+
 @media (max-width: 1044px) {
-  .grid {
+  .grid,
+  .grid2,
+  .grid3 {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -100,5 +144,9 @@ body {
     background-position: center;
     padding-top: 50%;
     height: 100vh;
+  }
+
+  .margin {
+    margin-top: 25.3%;
   }
 }
