@@ -130,7 +130,8 @@ body {
 }
 
 .shadow {
-  box-shadow: 0 5px 25px -2px rgba(0, 0, 0 / 6%);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
 }
 
 @media (max-width: 1044px) {
