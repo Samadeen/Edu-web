@@ -3,6 +3,7 @@ import Home from './components/home/Home';
 import Header from './components/common/heading/Header';
 import About from './components/about/About';
 import CoursesHome from './components/allCourses/CoursesHome';
+import Team from './components/team/Team';
 
 import './App.css';
 
@@ -14,6 +15,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/courses' element={<CoursesHome />} />
+        <Route path='/team' element={<Team />} />
       </Routes>
     </>
   );
