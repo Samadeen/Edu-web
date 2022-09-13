@@ -7,6 +7,7 @@ import Team from './components/team/Team';
 import Price from './components/pricing/Price';
 
 import './App.css';
+import Blog from './components/blog/Blog';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/courses' element={<CoursesHome />} />
         <Route path='/team' element={<Team />} />
         <Route path='/pricing' element={<Price />} />
+        <Route path='/journal' element={<Blog />} />
       </Routes>
     </>
   );
