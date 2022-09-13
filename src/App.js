@@ -9,6 +9,7 @@ import Price from './components/pricing/Price';
 import './App.css';
 import Blog from './components/blog/Blog';
 import Contact from './components/contact/Contact';
+import Footer from './components/common/footer/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/journal' element={<Blog />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
+      <Footer />
     </>
   );
 }
