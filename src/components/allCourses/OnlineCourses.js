@@ -10,7 +10,7 @@ const OnlineCourses = () => {
           <Title subtitle='COURSES' title='Browse Our Online Courses' />
           <div className='content grid3'>
             {online.map((val) => (
-              <div className='box'>
+              <div key={Math.random()} className='box'>
                 <div className='img'>
                   <img src={val.cover} alt='cover_image' />
                   <img

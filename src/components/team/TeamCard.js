@@ -6,7 +6,7 @@ const TeamCard = () => {
   return (
     <>
       {team.map((val) => (
-        <div className='items shadow'>
+        <div key={Math.random()} className='items shadow'>
           <div className='img'>
             <img src={val.cover} alt='cover' />
             <div className='overlay'>

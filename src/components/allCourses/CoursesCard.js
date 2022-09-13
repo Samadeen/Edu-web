@@ -10,7 +10,7 @@ const CoursesCard = () => {
         <div className='container grid2'>
           {coursesCard.map((val) => {
             return (
-              <div className='items'>
+              <div key={Math.random()} className='items'>
                 <div className='content flex'>
                   <div className='left'>
                     <div className='img'>

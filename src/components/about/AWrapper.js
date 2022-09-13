@@ -7,7 +7,7 @@ const AWrapper = () => {
       <section className='awrapper'>
         <div className='container grid'>
           {awrapper.map((val) => (
-            <div className='box flex'>
+            <div key={Math.random()} className='box flex'>
               <div className='img'>
                 <img src={val.cover} alt='cover_image' />
               </div>

@@ -20,7 +20,7 @@ const AboutCard = () => {
             />
             <div className='items'>
               {homeAbout.map((val) => (
-                <div className='item flexSB'>
+                <div key={Math.random()} className='item flexSB'>
                   <div className='img'>
                     <img src={val.cover} alt='cover_image' />
                   </div>

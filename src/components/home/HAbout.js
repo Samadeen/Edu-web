@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import { coursesCard } from '../../dummydata';
+import OnlineCourses from '../allCourses/OnlineCourses';
 import Title from '../common/title/Title';
 
 const HAbout = () => {
@@ -16,7 +17,7 @@ const HAbout = () => {
             <div className='grid2'>
               {coursesCard.slice(0, 6).map((val) => {
                 return (
-                  <div className='items'>
+                  <div key={Math.random()} className='items'>
                     <div className='content flex'>
                       <div className='left'>
                         <div className='img'>
@@ -35,7 +36,7 @@ const HAbout = () => {
                         </div>
                         <div className='details'>
                           {val.courTeacher.map((details) => (
-                            <>
+                            <div key={Math.random()}>
                               <div className='box'>
                                 <div className='dimg'>
                                   <img src={details.dcover} alt='cover' />
@@ -45,7 +46,7 @@ const HAbout = () => {
                                 </div>
                               </div>
                               <span>{details.totalTime}</span>
-                            </>
+                            </div>
                           ))}
                         </div>
                       </div>
@@ -63,6 +64,7 @@ const HAbout = () => {
           </div>
         </div>
       </section>
+      <OnlineCourses />
     </>
   );
 };
