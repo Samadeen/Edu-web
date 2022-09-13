@@ -1,7 +1,9 @@
 import React from 'react';
 import AboutCard from '../about/AboutCard';
+import HBlog from '../blog/HBlog';
 import HAbout from './HAbout';
 import Hero from './hero/Hero';
+import HPrice from './HPrice';
 import Testimonial from './testimonial/Testimonial';
 
 const Home = () => {
@@ -11,6 +13,8 @@ const Home = () => {
       <AboutCard />
       <HAbout />
       <Testimonial />
+      <HBlog />
+      <HPrice />
     </>
   );
 };
